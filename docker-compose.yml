@@ -1,0 +1,10 @@
+services:
+
+  node-app:
+    build: .
+    image: node-app:1.0
+    ports:
+      - '9999:9999'
+
+  java:
+    image: openjdk:8-slim
